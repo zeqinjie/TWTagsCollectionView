@@ -102,7 +102,7 @@ tagsView.dataSource = dataSource
 - 支持自定义
 * 效果
 
-<img src="https://github.com/zeqinjie/TWTagsCollectionView/blob/master/assets/1.jpeg" width="300" height="650" align="middle"/>
+<img src="https://github.com/zeqinjie/TWTagsCollectionView/blob/main/assets/1.jpeg" width="300" height="650" align="middle"/>
 
 ## Requirements
 
