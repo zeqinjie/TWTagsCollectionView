@@ -12,7 +12,7 @@ import SnapKit
 class TWTagsCollectionViewDemoController: UIViewController {
     fileprivate lazy var tagsView: TWTagsCollectionView = {
         var configure = TWTagsCollectionViewConfigure()
-        configure.alignedType = .left
+        configure.alignedType = .right
         configure.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         let tagsView = TWTagsCollectionView(frame: .zero, configure: configure)
         tagsView.delegate = self
