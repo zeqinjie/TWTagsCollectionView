@@ -1,0 +1,29 @@
+PODS:
+  - SnapKit (4.2.0)
+  - TWTagsCollectionView (0.1.0):
+    - SnapKit
+    - TWTagsCollectionView/TWTagsCollectionView (= 0.1.0)
+    - TWTagsCollectionView/UICollectionViewAlignedLayout (= 0.1.0)
+  - TWTagsCollectionView/TWTagsCollectionView (0.1.0):
+    - SnapKit
+  - TWTagsCollectionView/UICollectionViewAlignedLayout (0.1.0):
+    - SnapKit
+
+DEPENDENCIES:
+  - TWTagsCollectionView (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+
+EXTERNAL SOURCES:
+  TWTagsCollectionView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  TWTagsCollectionView: c393773afaeb97d9d04f25df8a04821223ea250b
+
+PODFILE CHECKSUM: b28e27d3923d4b6e430db020a5475e562b6003e0
+
+COCOAPODS: 1.10.1

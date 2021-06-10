@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'TWTagsCollectionView_Example' do
+  pod 'TWTagsCollectionView', :path => '../'
+
+  target 'TWTagsCollectionView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
