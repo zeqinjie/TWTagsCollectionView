@@ -34,6 +34,7 @@ TODO: Add long description of the pod here.
   
   s.subspec 'TWTagsCollectionView' do |ss|
       ss.source_files = 'TWTagsCollectionView/Classes/TWTagsCollectionView/*.swift'
+      ss.dependency 'TWTagsCollectionView/UICollectionViewAlignedLayout'
   end
   
   s.subspec 'UICollectionViewAlignedLayout' do |ss|
