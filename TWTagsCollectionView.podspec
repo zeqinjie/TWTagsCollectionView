@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TWTagsCollectionView'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = '基于 collectionView 封装的标签组件，支持自定义 cell'
 
 # This description is used to generate tags and improve search results.
