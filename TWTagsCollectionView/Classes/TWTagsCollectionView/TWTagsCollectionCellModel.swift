@@ -87,8 +87,8 @@ open class TWTagsCollectionCellModel: NSObject {
     // MARK: - Public Method
     public override init() {}
     
-    /// 📢 赋值 TWTagsCollModel 参数需求调用下
-    public func updateTitle() {
+    /// 📢 赋值 TWTagsCollModel 调用下 updateTitleWidth 获取宽度自动计算
+    public func updateTitleWidth() {
         let titleW: CGFloat = self.width(str: title, height: height, font: font)
         titleWidth =
             iconPosition.width +

@@ -27,6 +27,10 @@ public class TWTagsCollectionView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    deinit {
+        self.contentSizeObserver = nil
+    }
+    
     // MARK: - Public Method
     /// 代理
     @objc weak public var delegate: TWTagsCollectionViewDelegate? {
@@ -52,7 +56,7 @@ public class TWTagsCollectionView: UIView {
     fileprivate struct Marco {
         static let cellID: String = "TWTagsCollectionViewCell"
     }
-    /// Observation
+    /// Observation 注意 delloc 设置nil
     fileprivate var contentSizeObserver: NSKeyValueObservation?
     /// 内容高度
     fileprivate var contentSize: CGSize = .zero
@@ -74,7 +78,7 @@ public class TWTagsCollectionView: UIView {
             flowlayout = UICollectionViewFlowLayout()
         }
         guard let layout = flowlayout else { return }
-//        layout.scrollDirection = configure.scrollDirection
+        layout.scrollDirection = configure.scrollDirection
         layout.minimumLineSpacing = configure.minimumLineSpacing
         layout.minimumInteritemSpacing = configure.minimumInteritemSpacing
         layout.sectionInset = configure.sectionInset
@@ -88,6 +92,14 @@ public class TWTagsCollectionView: UIView {
         self.addSubview(tagCollectionView)
         tagCollectionView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
+        }
+        switch configure.scrollDirection {
+        case .vertical:
+            tagCollectionView.showsVerticalScrollIndicator = configure.showsScrollIndicator
+        case .horizontal:
+            tagCollectionView.showsHorizontalScrollIndicator = configure.showsScrollIndicator
+        default:
+            break;
         }
         
         // 监听contentSize

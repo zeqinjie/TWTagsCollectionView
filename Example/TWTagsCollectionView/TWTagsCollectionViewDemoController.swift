@@ -61,7 +61,7 @@ class TWTagsCollectionViewDemoController: UIViewController {
                 model.titleAlignment = .left
             }
             model.title = title
-            model.updateTitle()
+            model.updateTitleWidth()
             models.append(model)
         }
         return models
