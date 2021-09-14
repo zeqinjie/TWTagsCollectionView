@@ -122,6 +122,17 @@ it, simply add the following line to your Podfile:
 pod 'TWTagsCollectionView'
 ```
 
+## Version
+- v0.1.0
+        - 在业务中经常会使用各自标签
+        - 本组件是方便快速接入，根据你的配置，不需要去额外计算字符串长度
+        - 同时支持三种对齐方式，居左，居中，居右
+        - 支持自定义 cell 方式      
+- v0.2.0
+        - 重命名
+        - 修复 bug 移除 self.contentSizeObserver 
+
+
 ## Author
 
 zhengzeqin, zhengzeqin@addcn.com
